@@ -1,5 +1,6 @@
 # captcha-bypass
-Script in Python to bypass Google Recaptcha V2
+
+Script in Python to bypass Google Recaptcha v2 to scrap websites.
 
 ## Installation
 
