@@ -25,7 +25,7 @@ You need to install:
 You need to install te following packages using pip:
 ```bash
 pip install SpeechRecognition
-pip install urllib
+pip install urllib3
 pip install pydub
 pip install undetected_chromedriver
 pip install unidecode
