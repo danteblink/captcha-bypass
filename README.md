@@ -1,6 +1,6 @@
 # captcha-bypass
 
-Script in Python to bypass Google Recaptcha v2 to scrap websites. For better results use a proxy server or a VPN.
+Python script to bypass Google Recaptcha v2 to scrap websites. For better results use a proxy server or a VPN.
 
 ## Installation
 
