@@ -36,7 +36,7 @@ def bypass_captcha(url):
     # Chromedriver fix for docker
     options.add_argument('--disable-dev-shm-usage')
     driver = uc.Chrome(options=options)
-    data_ssalud = None
+    message = 'Could not bypass captcha'
     is_captcha_solved = False
     # Set this text according to the language of your Chrome Navigator
     successText = 'Tu verificación se ha completado.'
@@ -52,7 +52,7 @@ def bypass_captcha(url):
         print(e)
         driver.close()
         print('[WARNING] Caught. Need to change ip')
-        return data_ssalud
+        return message
     delay()
 
     #click on checkbox to activate recaptcha 
@@ -90,7 +90,7 @@ def bypass_captcha(url):
                 print(e)
                 driver.close()
                 print('[WARNING] Bot Caught. Need to change ip')
-                return data_ssalud
+                return message
 
             #get the mp3 audio file 
             src = driver.find_element_by_id("audio-source").get_attribute("src") 
